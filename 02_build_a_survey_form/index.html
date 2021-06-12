@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Work Stress Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Work Stress Survey Form</h1>
+        <p id="description">
+          This survey is designed to understand if employees feel stress about
+          their job and what are the stress factors. We thank you for giving
+          your time to fill it.
+        </p>
+      </header>
+
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label" class="question">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Jane Adams"
+            required
+          /><br />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label" class="question"
+            >Enter your email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="jane@xyz.com"
+            required
+          /><br />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label" class="question">Age</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="1"
+            max="2"
+            placeholder="28"
+          /><br />
+        </div>
+        <div class="form-group">
+          <label for="dropdown" class="question"
+            >Do you feel stressed at work?</label
+          >
+          <select name="yes-or-no" id="dropdown" required>
+            <option value="">--Please choose an option--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="question">I often work long hours?</p>
+          <input type="radio" id="radio-yes" name="yes-no" value="Yes" />
+          <label for="radio-yes">Yes</label><br />
+          <input type="radio" id="radio-no" name="yes-no" value="No" />
+          <label for="radio-no">No</label><br />
+        </div>
+        <div class="form-group">
+          <p class="question">
+            If “Yes”, could you please select the symptoms you experience due to
+            stress (select whichever is applicable)
+          </p>
+          <input
+            type="checkbox"
+            id="reason1"
+            name="reason1"
+            value="headaches"
+          />
+          <label for="reason1">Headaches</label><br />
+          <input
+            type="checkbox"
+            id="reason2"
+            name="reason2"
+            value="depression"
+          />
+          <label for="reason2">Depression</label><br />
+          <input
+            type="checkbox"
+            id="reason3"
+            name="reason3"
+            value="anxiety-attack"
+          />
+          <label for="reason3">Anxiety Attacks</label><br />
+          <input type="checkbox" id="reason4" name="reason4" value="insomnia" />
+          <label for="reason4">Insomina</label><br />
+          <input type="checkbox" id="reason5" name="reason5" value="other" />
+          <label for="reason5">Other (Please specify)</label><br />
+          <input type="text" id="reason6" name="reason6" />
+        </div>
+
+        <div class="form-group">
+          <p class="question">
+            How often do you have a hard time feeling relaxed?
+          </p>
+          <input
+            type="radio"
+            id="how-often-radio-never"
+            name="how-often"
+            value="never"
+          />
+          <label for="how-often-radio-never">Never</label><br />
+          <input
+            type="radio"
+            id="how-often-radio-once"
+            name="how-often"
+            value="once-a-while"
+          />
+          <label for="how-often-radio-once">No</label><br />
+          <input
+            type="radio"
+            id="how-often-radio-most"
+            name="how-often"
+            value="most-of-the-time"
+          />
+          <label for="how-often-radio-most">Most of the time</label><br />
+          <input
+            type="radio"
+            id="how-often-radio-always"
+            name="how-often"
+            value="always"
+          />
+          <label for="how-often-radio-always">Always</label><br />
+        </div>
+
+        <div class="form-group">
+          <label for="feedback" class="question"
+            >What are the three things you would like the organization to do
+            differently to help you cope with work stress?</label
+          >
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <input type="submit" id="submit" class="button" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
