@@ -1,6 +1,6 @@
 # Build a Tribute Page
 
-[View on codepen](https://codepen.io/nehamundye/pen/VwpXdxE)
+[View project on codepen](https://codepen.io/nehamundye/pen/VwpXdxE)
 
 https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page
 
